@@ -2,11 +2,12 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <label id="lblGreetings" style="color: white; font-size: 2.2em;"></label>
-    <p class="lead"></p>
+<div style="display: flex;">
+    <div class="jumbotron">
+        <label id="lblGreetings"></label>
+    </div>
+    <h1 class="snausbank">SnausBank</h1>
 </div>
-
 <div class="row">
     <!--<div class="col-md-4">
         <h2>Getting started</h2>
@@ -28,6 +29,15 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div> -->
 </div>
+<div class="dineKonti">
+    <h2>Dine konti</h2>
+    <div class="konti">
+        <div>
+            <h4>Fælleskonto</h4>
+            <h6>29389 kr.</h6>
+        </div>
+    </div>
+</div>
 
 <script>
  /* var elements = document.getElementsByName(FirstName);
@@ -45,5 +55,33 @@
     else if (hrs >= 17 && hrs <= 24)
         greet = 'Godaften'
 
-    document.getElementById('lblGreetings').innerHTML = greet /*+ ', ' + FirstName*/;
+    document.getElementById('lblGreetings').innerHTML = greet /*+ ', ' + FirstName*/ + ', ' ;
 </script>
+<style>
+    #lblGreetings {
+        color: white;
+        font-size: 2.2em;
+        padding-top: 15px;
+        
+    }
+
+    .snausbank {
+        padding-left: 10%;
+    }
+
+    .dineKonti {
+        color: white;
+        background-color: #2878F0;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 0 1.3em 0 1.3em;
+        margin-top: 3em;
+
+    }
+    .konti {
+        border: 3px solid white;
+        border-radius: 20px;
+        padding: 0.3em 1.3em 0 5px;
+        text-align: left;
+    }
+</style>
